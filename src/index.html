@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cartera claro</title>
+		<script src="cartera_claro.js"></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<figure class="title">
+			<h1 class="title__text">Cartera</h1>
+			<img class="title__img" src="./images/logo.png" alt="Logo de claro" />
+		</figure>
+		<div class="form">
+			<label class="form__label" for="money">Dinero a ingresar 💸</label> <br />
+			<input class="form__input" type="number" id="money" name="money" /> <br />
+			<input
+				class="form__button"
+				id="button"
+				type="submit"
+				value="Ingresar dinero"
+				onclick="ingresarDinero()"
+				onmouseenter="addBackground()"
+				onmouseleave="removeBackground()"
+			/>
+		</div>
+		<h2></h2>
+	</body>
+</html>
