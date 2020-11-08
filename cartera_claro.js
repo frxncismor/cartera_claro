@@ -2,8 +2,9 @@ const cartera = () => {
 	var guardarEstrellas = 0;
 
 	const contarDinero = (dinero) => {
-		if (dinero > 100) {
-			guardarEstrellas++;
+		let resultado = dinero / 100;
+		if (resultado > 0) {
+			guardarEstrellas += resultado;
 		}
 		let elemento = document.querySelector('h2');
 		elemento.innerHTML = `Usted tiene ${guardarEstrellas} ⭐`;
